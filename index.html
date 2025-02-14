@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SWAN-DF database of deepfakes</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Manrope:400,300,600" rel="stylesheet" type="text/css">
+
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="images/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="images/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/custom.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+        <h3 style="margin-top: 5%">HintsOfTruth: A Multimodal Checkworthiness Detection Dataset with Real and Synthetic Claims</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                [Paper coming soon]
+                        <!-- [<a href="https://publications.idiap.ch/publications/show/5092">Paper</a>]  -->
+            </div>
+            <div class="col-sm-4">
+                [Database coming soon]
+
+                        <!-- [<a href="https://www.idiap.ch/en/dataset/swan-df">Download Database</a>] -->
+            </div>
+            <div class="col-sm-4">
+                [Source code coming soon]
+
+                        <!-- [<a href="https://gitlab.idiap.ch/bob/paper.ijcb2023.av-deepfakes">Source Code</a>] -->
+            </div>
+        </div>
+    <p></p>            
+        <!-- <div class="one-half column" style="margin-top: 25%"> -->
+        <div class="ten columns" text-align: center;>
+            <!-- <div class="col"> -->
+        <p>
+            The first publicly available multimodal dataset of image-text pairs containing both real-world and synthetically 
+            generated checkworthy and non-checkworthy claims. We source real claims from datasets like 5Pils, 
+            <a href="https://github.com/kinit-sk/multiclaim">Multiclaim</a>, 
+            <a href="https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset">Flickr30K</a>, and 
+            <a href="https://www.kaggle.com/datasets/prathamsaraf1389/senticap">SentiCap</a>. 
+            Synthetic images and text are generated using 
+            <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Flux</a>, 
+            <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">StableDiffusion 3.5</a>, 
+            <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and 
+            <a href="https://huggingface.co/Salesforce/blip-image-captioning-large">BLIP</a>. 
+            This dataset can be used as a benchmark for checkworthiness detection models.
+
+        <!-- <p>If you use the dataset, please cite the following paper:</p>
+<pre><code>
+@INPROCEEDINGS{Korshunov_IJCB_2023,
+  author = {Korshunov, Pavel and Chen, Haolin and Garner, Philip N. and Marcel, S{\'{e}}bastien},
+  projects = {Idiap, NAST, Biometrics Center},
+  month = sep,
+  title = {Vulnerability of Automatic Identity Recognition to Audio-Visual Deepfakes},
+  booktitle = {IEEE International Joint Conference on Biometrics (IJCB)},
+  year = {2023},
+}       
+</code></pre> -->
+      </div>
+    </div>
+
+    <section id="Examples">
+    <div class="row">
+        <h5 style="margin-top: 5%">Real-world checkworthy examples</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+    <h5 style="margin-top: 5%">Synthetic checkworthy examples</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <image width="100%" height="400" controls> <source src="images" type="jpg"> <images>
+                    <p class="card-text">Claim 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+    <section id="table">
+    <!-- <div class="row">
+        <h3 style="margin-top: 5%">LibriTTS-DF Samples</h3>
+        <div class="ten columns" text-align: center;>
+        <p>Compare the voices of original speakers from <a href="https://www.openslr.org/60/">LibriTTS dataset</a>
+            with three selected voice deepfakes generated using 
+            adapted <a href="https://arxiv.org/pdf/2103.00993.pdf">Adaspeech</a>, 
+            tuned <a href="https://github.com/neonbjb/tortoise-tts">TorToiSe</a>, and zero-shot model 
+            <a href="https://github.com/Edresson/YourTTS">YourTTS</a> used in voice convertion capacity.</p>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+            <div class="table-responsive pt-3">
+                <table class="table table-hover pt-2">
+                <thead>
+                <tr>
+                <th style="text-align: center">Text (speaker ID: 121)</th>
+                <th style="text-align: center">Ground Truth</th>
+                <th style="text-align: center">Adaspeech</th>
+                <th style="text-align: center">TorToiSe</th>
+                <th style="text-align: center">YourTTS (1188 to 121)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td style="text-align: left;vertical-align:middle;width: 500px">Also, a popular contrivance whereby love-making may be suspended but not stopped during the picnic season.</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-121-original.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-121-tts-Adaspeech.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-121-tts-tortoise-diffusion.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/libritts-1188-to-121-voice-conversion.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+                </tbody>
+                <thead>
+                <tr>
+                <th style="text-align: center">Text (speaker ID: 1188)</th>
+                <th style="text-align: center">Ground Truth</th>
+                <th style="text-align: center">Adaspeech</th>
+                <th style="text-align: center">TorToiSe</th>
+                <th style="text-align: center">YourTTS (121 to 1188)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td style="text-align: left;vertical-align:middle;width: 500px">You see how doubly, how intimately, opposed the ideas are; yet how difficult to explain without apparent contradiction.</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-1188-original.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-1188-tts-Adaspeech.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios/libritts-1188-tts-tortoise-diffusion.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/libritts-121-to-1188-voice-conversion.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+    </div> -->
+    </section>
+    
+
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>3x3 Video Grid</h1>
+                <p>Here are some videos for you to enjoy!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <video width="100%" height="400" controls> <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1"></iframe>
+                        <h5 class="card-title">Video 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <video width="100%" height="400" controls> <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 2"></iframe>
+                        <h5 class="card-title">Video 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <video width="100%" height="400" controls> <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 3"></iframe>
+                        <h5 class="card-title">Video 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <video width="100%" height="400" controls> <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" type="video/mp4"> </video>
+                        <h5 class="card-title">Video 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <iframe width="100%" height="200
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 5"></iframe>
+                        <h5 class="card-title">Video 5</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <video width="100%" height="400" controls> <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 6"></iframe>
+                        <h5 class="card-title">Video 6</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada vel velit a efficitur. Suspendisse a malesuada nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ -->
