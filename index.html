@@ -1,149 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>HintsOfTruth</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>HintsOfTruth</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="http://fonts.googleapis.com/css?family=Manrope:400,300,600" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Manrope:400,300,600" rel="stylesheet" type="text/css">
 
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="images/png" href="images/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="images/svg+xml" href="images/favicon.svg" />
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-  <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="icon" type="images/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="images/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="stylesheet" href="css/custom.css"> -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 
-  <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/skeleton.css">
+
+    <style>
+        .author-link {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .author-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-        <h3 style="margin-top: 5%">HintsOfTruth: A Multimodal Checkworthiness Detection Dataset with Real and Synthetic Claims</h3>
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                [Paper coming soon]
-            </div>
-            <div class="col-sm-4">
-                [Dataset coming soon]
+            <h3 style="margin-top: 5%">HintsOfTruth: A Multimodal Checkworthiness Detection Dataset with Real and
+                Synthetic Claims</h3>
+            <div class="row">
+
+
+                <h5>
+                    <a href="https://liacs.leidenuniv.nl/~meermtvander/" class="author-link" target="_blank">Michiel van
+                        der Meer</a><sup>1</sup>,
+                    <a href="https://www.idiap.ch/~pkorshunov/" class="author-link" target="_blank">Pavel
+                        Korshunov</a><sup>2</sup>,
+                    <a href="https://www.linkedin.com/in/sebastienmarcel/" class="author-link" target="_blank">Sébastien
+                        Marcel</a><sup>2</sup>,
+                    <a href="https://sites.google.com/site/lonnekenlp/" class="author-link" target="_blank">Lonneke van
+                        der Plas</a><sup>3</sup>
+                </h5>
+
+                <ol style="font-size: 0.9em; margin-top: 0.5em;">
+                    <li>Leiden Institute of Advanced Computer Science, Leiden University, The Netherlands</li>
+                    <li>Biometrics Security and Privacy group, Idiap Research Institute, Switzerland</li>
+                    <li>Institute of Argumentation, Linguistics and Semiotics, USI Università della Svizzera italiana,
+                        Switzerland</li>
+                </ol>
+
 
             </div>
-            <div class="col-sm-4">
-                [Source code coming soon]
+            <div class="row">
+                <div class="col-sm-4">
+                    [<a href="https://arxiv.org/abs/2502.11753" target="_blank">Preprint</a>]
+                </div>
+                <div class="col-sm-4">
+                    [<a href="https://huggingface.co/collections/michiel/hints-of-truth-67fe1c81eba930007599baa1"
+                        target="_blank">HuggingFace Hub</a>]
 
+                </div>
+                <div class="col-sm-4">
+                    [Source code coming soon]
+                </div>
+            </div>
+            <p></p>
+            <!-- <div class="one-half column" style="margin-top: 25%"> -->
+            <div class="ten columns" text-align: center;>
+                <!-- <div class="col"> -->
+                <p>
+                    The first publicly available multimodal dataset of image-text pairs containing both real-world and
+                    synthetically
+                    generated checkworthy and non-checkworthy claims. We source real claims from datasets like <a
+                        href="https://github.com/UKPLab/5pils">5Pils</a>,
+                    <a href="https://github.com/kinit-sk/multiclaim">Multiclaim</a>,
+                    <a href="https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset">Flickr30K</a>, and
+                    <a href="https://www.kaggle.com/datasets/prathamsaraf1389/senticap">SentiCap</a>.
+                    Synthetic images and text are generated using
+                    <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Flux</a>,
+                    <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">StableDiffusion 3.5</a>,
+                    <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and
+                    <a href="https://huggingface.co/Salesforce/blip-image-captioning-large">BLIP</a>.
+                    This dataset can be used as a benchmark for checkworthiness detection models.
             </div>
         </div>
-    <p></p>
-        <!-- <div class="one-half column" style="margin-top: 25%"> -->
-        <div class="ten columns" text-align: center;>
-            <!-- <div class="col"> -->
-        <p>
-            The first publicly available multimodal dataset of image-text pairs containing both real-world and synthetically
-            generated checkworthy and non-checkworthy claims. We source real claims from datasets like <a href="https://github.com/UKPLab/5pils">5Pils</a>,
-            <a href="https://github.com/kinit-sk/multiclaim">Multiclaim</a>,
-            <a href="https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset">Flickr30K</a>, and
-            <a href="https://www.kaggle.com/datasets/prathamsaraf1389/senticap">SentiCap</a>.
-            Synthetic images and text are generated using
-            <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Flux</a>,
-            <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">StableDiffusion 3.5</a>,
-            <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and
-            <a href="https://huggingface.co/Salesforce/blip-image-captioning-large">BLIP</a>.
-            This dataset can be used as a benchmark for checkworthiness detection models.
-      </div>
-    </div>
 
-    <section id="Examples">
-    <div class="row">
-        <h5 style="margin-top: 5%">Checkworthy example</h3>
-        <b>Claim: </b><p>Photo of a flooded Ahmedabad International Airport.</p>
-        <b>Llava-generated claim: </b><p>The image shows a flooded airport with several airplanes parked in the water. There are five airplanes in total, with one of them being a large jetliner. The airplanes are parked in a row, with some of them partially submerged in the water. The scene appears to be a mix of a flooded airport and a beach, with the airplanes serving as a unique and unexpected sight.</p>
-        <b>BLIP-generated claim: </b><p>Arafly parked airplanes are lined up in a row at an airport</p>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="200" src="images/cw_base.png">
-                    <b class="card-text">Real</b>
+        <section id="Examples">
+            <div class="row">
+                <h5 style="margin-top: 5%">Checkworthy example</h3>
+                    <b>Claim: </b>
+                    <p>Photo of a flooded Ahmedabad International Airport.</p>
+                    <b>Llava-generated claim: </b>
+                    <p>The image shows a flooded airport with several airplanes parked in the water. There are five
+                        airplanes in total, with one of them being a large jetliner. The airplanes are parked in a row,
+                        with some of them partially submerged in the water. The scene appears to be a mix of a flooded
+                        airport and a beach, with the airplanes serving as a unique and unexpected sight.</p>
+                    <b>BLIP-generated claim: </b>
+                    <p>Arafly parked airplanes are lined up in a row at an airport</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="200" src="images/cw_base.png">
+                            <b class="card-text">Real</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="300" src="images/cw_flux.png">
+                            <b class="card-text">Flux</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="300" src="images/cw_sd.png">
+                            <b class="card-text">StableDiffusion</b>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="300" src="images/cw_flux.png">
-                    <b class="card-text">Flux</b>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="300" src="images/cw_sd.png">
-                    <b class="card-text">StableDiffusion</b>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="row">
-    <h5 style="margin-top: 5%">Non-checkworthy example</h3>
-        <b>Claim: </b><p>A woman in shorts and sandals is being pulled by a small child as a subway train goes by.</p>
-        <b>Llava-generated claim: </b><p>The woman and the girl are walking down the subway platform.</p>
-        <b>BLIP-generated claim: </b><p>Woman and child walking on platform next to train with american flag</p>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="100%" src="images/ncw_base.png">
-                    <b class="card-text">Real</b>
+            <div class="row">
+                <h5 style="margin-top: 5%">Non-checkworthy example</h3>
+                    <b>Claim: </b>
+                    <p>A woman in shorts and sandals is being pulled by a small child as a subway train goes by.</p>
+                    <b>Llava-generated claim: </b>
+                    <p>The woman and the girl are walking down the subway platform.</p>
+                    <b>BLIP-generated claim: </b>
+                    <p>Woman and child walking on platform next to train with american flag</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="100%" src="images/ncw_base.png">
+                            <b class="card-text">Real</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="100%" src="images/ncw_flux.png">
+                            <b class="card-text">Flux</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="100%" height="100%" src="images/ncw_sd.png">
+                            <b class="card-text">StableDiffusion</b>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="100%" src="images/ncw_flux.png">
-                    <b class="card-text">Flux</b>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <img width="100%" height="100%" src="images/ncw_sd.png">
-                    <b class="card-text">StableDiffusion</b>
-                </div>
-            </div>
-        </div>
-    </div>
 
-</section>
+        </section>
 
 </body>
+
 </html>
