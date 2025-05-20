@@ -46,6 +46,54 @@
         .author-link:hover {
             text-decoration: underline;
         }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+
+        .preprint {
+            background-color: #eef3ff;
+            color: #264de4;
+            border: 2px solid #264de4;
+        }
+
+        .preprint:hover {
+            background-color: #264de4;
+            color: white;
+        }
+
+        .huggingface {
+            background-color: #fef6e4;
+            color: #ff6f00;
+            border: 2px solid #ff6f00;
+        }
+
+        .huggingface:hover {
+            background-color: #ff6f00;
+            color: white;
+        }
+
+        .disabled-button {
+            background-color: #e0e0e0;
+            color: #777;
+            border: 2px solid #aaa;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 
@@ -80,18 +128,17 @@
 
 
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    [<a href="https://arxiv.org/abs/2502.11753" target="_blank">Preprint</a>]
-                </div>
-                <div class="col-sm-4">
-                    [<a href="https://huggingface.co/collections/michiel/hints-of-truth-67fe1c81eba930007599baa1"
-                        target="_blank">HuggingFace Hub</a>]
-
-                </div>
-                <div class="col-sm-4">
-                    [Source code coming soon]
-                </div>
+            <div class="button-row">
+                <a href="https://arxiv.org/abs/2502.11753" target="_blank" class="custom-button preprint">
+                    📄 Preprint
+                </a>
+                <a href="https://huggingface.co/collections/michiel/hints-of-truth-67fe1c81eba930007599baa1"
+                    target="_blank" class="custom-button huggingface">
+                    🤗 HuggingFace Hub
+                </a>
+                <span class="custom-button disabled-button">
+                    🛠️ Source code coming soon
+                </span>
             </div>
             <p></p>
             <!-- <div class="one-half column" style="margin-top: 25%"> -->
